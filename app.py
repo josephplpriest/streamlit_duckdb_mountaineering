@@ -3,7 +3,6 @@ import duckdb
 import os
 from PIL import Image
 import plotly.express as px
-from helpers import footer
 
 st.set_page_config(layout="wide")
 
@@ -100,4 +99,4 @@ n_deaths = duckdb.sql(
 st.sidebar.metric("Expedition Count", expedition_cnt)
 st.sidebar.metric("Total Deaths", n_deaths)
 
-st.markdown(footer, unsafe_allow_html=True)
+
